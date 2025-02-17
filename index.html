@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=grid_view" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quick Menu</title>
+</head>
+
+<body>
+
+    <!-- ////////// Start Load \\\\\\\\\\ -->
+    <article class="shadow-portal" id="loader">
+        <article class="spinner-orb">
+            <img src="images/logo.png" alt="Logo"> <!-- هنا ضع رابط صورة اللوجو -->
+        </article>
+    </article>
+    <!-- ////////// End Load \\\\\\\\\\ -->
+
+    <section class="all-project">
+
+        <!-- ////////// Start Slider \\\\\\\\\\ -->
+        <section class="img_slider">
+            <!--image slider start-->
+            <article class="slider">
+                <article class="slides">
+                    <!--radio buttons start-->
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <!--radio buttons end-->
+                    <!--slide images start-->
+                    <article class="slide first">
+                        <img src="images/slider 1.jpeg" alt="">
+                    </article>
+                    <article class="slide">
+                        <img src="images/slider 2.jpeg" alt="">
+                    </article>
+                    <article class="slide">
+                        <img src="images/slider 3.jpeg" alt="">
+                    </article>
+                    <!--slide images end-->
+                </article>
+            </article>
+            <!--image slider end-->
+        </section>
+        <!-- ////////// End Slider \\\\\\\\\\ -->
+
+        <!-- ////////// Start menu Lang \\\\\\\\\\ -->
+        <article id="languageMenu">
+            <article class="menu-header">
+                <span>
+                    اختر اللغة
+                </span>
+                <i class="fa-solid fa-xmark" id="closeButton"></i>
+            </article>
+            <ul class="name-lang">
+                <li data-lang="Arabic">Arabic</li>
+                <li data-lang="En">English</li>
+                <!-- <li data-lang="Français">Français</li>
+                <li data-lang="Deutsch">Deutsch</li> -->
+            </ul>
+        </article>
+        <!-- ////////// End menu Lang \\\\\\\\\\ -->
+
+        <!-- ////////// Start \\\\\\\\\\ -->
+        <article class="icon-heart-and-profile-and-discription-and-button-and-icon-globe">
+
+            <article class="button-and-icon-globe">
+                <span class="language" id="languagespan">Arabic
+                    <i class="fa-solid fa-globe"></i>
+                </span>
+            </article>
+
+            <article class="profile-and-discription">
+                <!-- //////////دا كود محدش ييجي عندة -->
+                <article class="overlay" id="overlay" onclick="closeImage(event)">
+                    <span class="close-profile" onclick="closeImage()"><i class="fa-solid fa-xmark"></i></span>
+                    <img id="overlay-img" src="" alt="Expanded Image">
+                </article>
+                <!-- ///////////////////////////////////// -->
+                <img class="profile-pic" src="images/logo.png" alt="Profile" onclick="openImage(this)">
+                <h1 class="place-name">
+                    Coffee Time
+                </h1>
+                <!-- زر الأيقونة -->
+                <i class="fa-solid fa-clock" id="openPopup"></i>
+
+                <!-- الخلفية المعتمة -->
+                <article class="overlaydark" id="overlaydark"></article>
+
+                <!-- النافذة -->
+                <article class="popup" id="popup">
+                    <h1 class="work-timings">
+                        أوقات العمل
+                    </h1>
+                    <article class="time-popup">
+                        <span class="day">
+                            السبت
+                        </span>
+                        <article class="data-time">
+                            <span class="start-work-time">01:00</span>
+                            <Span>إلى</Span>
+                            <span class="end-work-time">05:00</span>
+                        </article>
+                    </article>
+                    <article class="time-popup">
+                        <span class="day">
+                            الأحد
+                        </span>
+                        <article class="data-time">
+                            <span class="start-work-time">01:00</span>
+                            <Span>إلى</Span>
+                            <span class="end-work-time">05:00</span>
+                        </article>
+                    </article>
+                    <article class="time-popup">
+                        <span class="day">
+                            الاثنين
+                        </span>
+                        <article class="data-time">
+                            <span class="start-work-time">01:00</span>
+                            <Span>إلى</Span>
+                            <span class="end-work-time">05:00</span>
+                        </article>
+                    </article>
+                    <article class="time-popup">
+                        <span class="day">
+                            الثلاثاء
+                        </span>
+                        <article class="data-time">
+                            <span class="start-work-time">01:00</span>
+                            <Span>إلى</Span>
+                            <span class="end-work-time">05:00</span>
+                        </article>
+                    </article>
+                    <article class="time-popup">
+                        <span class="day">
+                            الاربعاء
+                        </span>
+                        <article class="data-time">
+                            <span class="start-work-time">01:00</span>
+                            <Span>إلى</Span>
+                            <span class="end-work-time">05:00</span>
+                        </article>
+                    </article>
+                    <article class="time-popup">
+                        <span class="day">
+                            الخميس
+                        </span>
+                        <article class="data-time">
+                            <span class="start-work-time">01:00</span>
+                            <Span>إلى</Span>
+                            <span class="end-work-time">05:00</span>
+                        </article>
+                    </article>
+                    <article class="time-popup">
+                        <span class="day">
+                            الجمعة
+                        </span>
+                        <article class="data-time">
+                            <span class="start-work-time">01:00</span>
+                            <Span>إلى</Span>
+                            <span class="end-work-time">05:00</span>
+                        </article>
+                    </article>
+                </article>
+                <article class="socialmedia">
+                    <a href="tel:0123456789">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <a href="https://wa.me/01026775729" target="_blank">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.instagram.com/amr_khalid_youssef?igsh=dnBpdDYzeXh6aGxp" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/share/15hDkAqaMQ/" target="_blank">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://maps.app.goo.gl/QGKnxv3kjbWzhbxe8" target="_blank">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </a>
+
+                </article>
+            </article>
+        </article>
+        <!-- ////////// End \\\\\\\\\\ -->
+
+        <!-- ////////// Start \\\\\\\\\\ -->
+        <nav class="menu-container" id="stickyMenu">
+            <ul class="menu-container-item" dir="rtl">
+                <li class="menu-container-li">
+                    <a href="#offers" class="menu-link"><i class="fa-solid fa-tag"></i>
+                        <span>
+                            عروض
+                        </span>
+                    </a>
+                </li>
+                <li class="menu-container-li">
+                    <a href="#popular" class="menu-link"><i class="fa-solid fa-star"></i>
+                        <span>الأكثر طلباً</span>
+                    </a>
+                </li>
+                <li class="menu-container-li">
+                    <a href="#coffee" class="menu-link"> <img class="category-item" src="images/coffee.jpeg" alt="">
+                        <span>قهوة</span>
+                    </a>
+                </li>
+                <li class="menu-container-li">
+                    <a href="#"> <img class="category-item" src="images/Tea.jpeg" alt="">
+                        <span>شاي</span>
+                    </a>
+                </li>
+                <li class="menu-container-li">
+                    <a href="#"> <img class="category-item" src="images/Milk.jpeg" alt="">
+                        <span>حليب</span>
+                    </a>
+                </li>
+                <li class="menu-container-li">
+                    <a href="#"> <img class="category-item" src="images/Juice.jpeg" alt="">
+                        <span>عصير</span>
+                    </a>
+                </li>
+                <li class="menu-container-li">
+                    <a href="#"> <img class="category-item" src="images/Juice 1.jpeg" alt="">
+                        <span>مشروبات غازية</span>
+                    </a>
+                </li>
+                <li class="menu-container-li">
+                    <a href="#"> <img class="category-item" src="images/download.jpeg" alt="">
+                        <span>شوكولاته</span>
+                    </a>
+                </li>
+                <li class="menu-container-li">
+                    <a href="#"> <img class="category-item" src="images/download.jpeg" alt="">
+                        <span>شوكولاته</span>
+                    </a>
+                </li>
+                <li class="menu-container-li">
+                    <a href="#"> <img class="category-item" src="images/download.jpeg" alt="">
+                        <span>شوكولاته</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- ////////// End \\\\\\\\\\ -->
+
+        <!-- ////////// Start \\\\\\\\\\ -->
+        <article class="random1">
+            <article class="random2" onclick="toggleContent()">
+                <i class="fa-solid fa-bars"></i> <!-- أيقونة القائمة -->
+                <article class="random3"></article>
+                <i class="material-symbols-outlined">grid_view</i> <!-- أيقونة الشبكة -->
+            </article>
+        </article>
+
+        <article id="block1" class="random4 active">
+            <article class="accordion">
+
+                <!-- القسم الأول -->
+                <article class="accordion-item">
+                    <article class="accordion-header" onclick="toggleAccordion(this)">
+                        <article class="img-main-product">
+                            <i class="fa-solid fa-tag"></i>
+                            <span>عروض</span>
+                        </article>
+                        <i class="icon fas fa-chevron-down"></i>
+                    </article>
+                    <article class="product-content">
+
+                        <article class="product">
+                            <!-- <img class="offer" src="images/main-in-menu/offer.svg" alt> -->
+                            <article class="img-product">
+                                <img src="images/Juice.jpeg" alt="" onclick="openImage(this)">
+                            </article>
+                            <article class="info itemBox" data-link-to="model-1">
+                                <article class="content-product">
+                                    <h3>عصير رمان</h3>
+                                    <p class="description_text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, eligendi.
+                                        Nemo a voluptates perspiciatis neque officiis at beatae est dolores nisi
+                                        repellendus necessitatibus quisquam, consectetur fugit sit quod molestias
+                                        deserunt.
+                                    </p>
+                                </article>
+                                <article class="unit-according">
+                                    <article class="discount-pound">
+                                        <del class="discount-according">50</del>
+                                        <span class="pound-according">20</span>
+                                    </article>
+                                    <span>
+                                        ج.م
+                                    </span>
+                                </article>
+
+                            </article>
+                        </article>
+
+                        <article class="product">
+                            <!-- <img class="offer" src="images/main-in-menu/offer.svg" alt> -->
+                            <article class="img-product">
+                                <img src="images/Juice.jpeg" alt="" onclick="openImage(this)">
+                            </article>
+                            <article class="info itemBox" data-link-to="model-1">
+                                <article class="content-product">
+                                    <h3>عصير رمان</h3>
+                                    <p class="description_text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, eligendi.
+                                        Nemo a voluptates perspiciatis neque officiis at beatae est dolores nisi
+                                        repellendus necessitatibus quisquam, consectetur fugit sit quod molestias
+                                        deserunt.
+                                    </p>
+                                </article>
+                                <article class="unit-according">
+                                    <article class="discount-pound">
+                                        <del class="discount-according">50</del>
+                                        <span class="pound-according">20</span>
+                                    </article>
+                                    <span>
+                                        ج.م
+                                    </span>
+                                </article>
+
+                            </article>
+                        </article>
+
+                        <article class="product">
+                            <!-- <img class="offer" src="images/main-in-menu/offer.svg" alt> -->
+                            <article class="img-product">
+                                <img src="images/Juice.jpeg" alt="" onclick="openImage(this)">
+                            </article>
+                            <article class="info itemBox" data-link-to="model-1">
+                                <article class="content-product">
+                                    <h3>عصير رمان</h3>
+                                    <p class="description_text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, eligendi.
+                                        Nemo a voluptates perspiciatis neque officiis at beatae est dolores nisi
+                                        repellendus necessitatibus quisquam, consectetur fugit sit quod molestias
+                                        deserunt.
+                                    </p>
+                                </article>
+                                <article class="unit-according">
+                                    <article class="discount-pound">
+                                        <del class="discount-according">50</del>
+                                        <span class="pound-according">20</span>
+                                    </article>
+                                    <span>
+                                        ج.م
+                                    </span>
+                                </article>
+                            </article>
+                        </article>
+
+                    </article>
+                </article>
+                <!-- القسم الثاني -->
+                <article class="accordion-item">
+                    <article class="accordion-header" onclick="toggleAccordion(this)">
+                        <article class="img-main-product">
+                            <i class="fa-solid fa-star"></i>
+                            <span>الأكثر طلباً</span>
+                        </article>
+                        <i class="icon fas fa-chevron-down"></i>
+                    </article>
+                    <article class="product-content">
+
+                        <article class="product">
+                            <!-- <img class="offer" src="images/main-in-menu/offer.svg" alt> -->
+                            <article class="img-product">
+                                <img src="images/بطاطس.jpeg" alt="" onclick="openImage(this)">
+                            </article>
+                            <article class="info itemBox" data-link-to="model-1">
+                                <article class="content-product">
+                                    <h3>عصير رمان</h3>
+                                    <p class="description_text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, eligendi.
+                                        Nemo a voluptates perspiciatis neque officiis at beatae est dolores nisi
+                                        repellendus necessitatibus quisquam, consectetur fugit sit quod molestias
+                                        deserunt.
+                                    </p>
+                                </article>
+                                <article class="unit-according">
+                                    <article class="discount-pound">
+                                        <del class="discount-according">50</del>
+                                        <span class="pound-according">20</span>
+                                    </article>
+                                    <span>
+                                        ج.م
+                                    </span>
+                                </article>
+                            </article>
+                        </article>
+
+                        <article class="product">
+                            <article class="img-product">
+                                <img src="images/بطاطس.jpeg" alt="" onclick="openImage(this)">
+                            </article>
+                            <article class="info itemBox" data-link-to="model-2">
+                                <article class="content-product">
+                                    <h3>عصير رمان</h3>
+                                    <p class="description_text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, eligendi.
+                                        Nemo a voluptates perspiciatis neque officiis at beatae est dolores nisi
+                                        repellendus necessitatibus quisquam, consectetur fugit sit quod molestias
+                                        deserunt.
+                                    </p>
+                                </article>
+                                <article class="unit-according">
+                                    <span class="pound-according">20 ج.م </span>
+                                </article>
+                            </article>
+                        </article>
+
+                        <article class="product">
+                            <article class="img-product">
+                                <img src="images/بطاطس.jpeg" alt="" onclick="openImage(this)">
+                            </article>
+                            <article class="info itemBox" data-link-to="model-3">
+                                <article class="content-product">
+                                    <h3>عصير رمان</h3>
+                                    <p class="description_text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, eligendi.
+                                        Nemo a voluptates perspiciatis neque officiis at beatae est dolores nisi
+                                        repellendus necessitatibus quisquam, consectetur fugit sit quod molestias
+                                        deserunt.
+                                    </p>
+                                </article>
+                                <article class="unit-according-size">
+                                    <article class="size-large">
+                                        <span>
+                                            L
+                                        </span>
+                                        <span>
+                                            100
+                                        </span>
+                                    </article>
+                                    <article class="size-medium">
+                                        <span>
+                                            M
+                                        </span>
+                                        <span>
+                                            50
+                                        </span>
+                                    </article>
+                                    <article class="size-small">
+                                        <span>
+                                            S
+                                        </span>
+                                        <span>
+                                            25
+                                        </span>
+                                    </article>
+                                </article>
+                            </article>
+                        </article>
+                    </article>
+                </article>
+            </article>
+        </article>
+        <!-- ////////// Start Gride \\\\\\\\\\ -->
+        <article id="block2" class="random4">
+
+            <article id="gridContent" class="content hidden">
+
+                <article class="item-product-all">
+                    <h1 class="name-items-gride">
+                        عروض
+                    </h1>
+                    <article class="cards-gride">
+                        <article class="grid-item-product  itemBox" data-link-to="model-1">
+                            <img class="image-product-gride" src="images/Juice.jpeg" alt="" srcset="">
+                            <article class="name-product-gride-and-detailts-product-gride">
+                                <h1 class="name-product-gride">
+                                    عصير رمان
+                                </h1>
+                            </article>
+                            <article class="unit-gride">
+                                <!-- <img class="offer" src="images/main-in-menu/offer.svg" alt="" srcset=""> -->
+                                <article class="unit-gride-offer">
+                                    <span class="pound-gride">20 <span> ج.م </span></span>
+                                    <del class="discount-gride"><span>50</span> ج.م </del>
+                                </article>
+                            </article>
+                        </article>
+
+                        <article class="grid-item-product  itemBox" data-link-to="model-1">
+                            <img class="image-product-gride" src="images/Juice.jpeg" alt="" srcset="">
+                            <article class="name-product-gride-and-detailts-product-gride">
+                                <h1 class="name-product-gride">
+                                    عصير رمان
+                                </h1>
+                            </article>
+                            <article class="unit-gride">
+                                <!-- <img class="offer" src="images/main-in-menu/offer.svg" alt="" srcset=""> -->
+                                <article class="unit-gride-offer">
+                                    <span class="pound-gride">20 <span> ج.م </span></span>
+                                    <del class="discount-gride"><span>50</span> ج.م </del>
+                                </article>
+                            </article>
+                        </article>
+
+                    </article>
+                </article>
+
+                <article class="item-product-all">
+                    <h1 class="name-items-gride">
+                        الأكثر طلباً
+                    </h1>
+                    <article class="cards-gride">
+                        <article class="grid-item-product  itemBox" data-link-to="model-1">
+                            <img class="image-product-gride" src="images/Juice.jpeg" alt="" srcset="">
+                            <article class="name-product-gride-and-detailts-product-gride">
+                                <h1 class="name-product-gride">
+                                    عصير رمان
+                                </h1>
+                            </article>
+                            <article class="unit-gride">
+                                <!-- <img class="offer  " src="images/main-in-menu/offer.svg" alt="" srcset=""> -->
+                                <article class="unit-gride-offer">
+                                    <span class="pound-gride">20 <span> ج.م </span></span>
+                                    <del class="discount-gride"><span>50</span> ج.م </del>
+                                </article>
+                            </article>
+                        </article>
+
+                        <article class="grid-item-product  itemBox" data-link-to="model-2">
+                            <img class="image-product-gride" src="images/Juice.jpeg" alt="" srcset="">
+                            <article class="name-product-gride-and-detailts-product-gride">
+                                <h1 class="name-product-gride">
+                                    عصير رمان
+                                </h1>
+                            </article>
+                            <article class="unit-gride">
+                                <article class="unit-gride-offer">
+                                    <span class="pound-gride">20 <span>جنيه</span></span>
+                                </article>
+                            </article>
+                        </article>
+
+                        <article class="grid-item-product  itemBox" data-link-to="model-3">
+                            <img class="image-product-gride" src="images/Juice.jpeg" alt="" srcset="">
+                            <article class="name-product-gride-and-detailts-product-gride">
+                                <h1 class="name-product-gride">
+                                    عصير رمان
+                                </h1>
+                            </article>
+
+                            <article class="unit-gride-size">
+                                <article class="size-large">
+                                    <span>
+                                        L
+                                    </span>
+                                    <span>
+                                        100
+                                    </span>
+                                </article>
+                                <article class="size-medium">
+                                    <span>
+                                        M
+                                    </span>
+                                    <span>
+                                        50
+                                    </span>
+                                </article>
+                                <article class="size-small">
+                                    <span>
+                                        S
+                                    </span>
+                                    <span>
+                                        25
+                                    </span>
+                                </article>
+                            </article>
+                        </article>
+
+                    </article>
+                </article>
+
+            </article>
+
+        </article>
+        <!-- ////////// End Gride \\\\\\\\\\ -->
+
+        <!-- ////////// Start Discrebtion \\\\\\\\\\ -->
+        <article class="hiddenLayer" id="model-1">
+            <article class="popFrame">
+                <i class="exitMark fa-solid fa-xmark"></i>
+                <a href="">
+                    <i class="fa-solid fa-share"></i>
+                </a>
+                <div class="stickyHeader">
+                    <img src="images/Juice.jpeg" alt="">
+
+                    <div class="title-name-and-desc">
+                        <h2>عصير برتقال</h2>
+                    </div>
+                </div>
+                <article class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum molestiae quasi dolores
+                        nostrumxercitationem,
+                        voluptatem illo deleniti sit distinctio consequuntur accusantium sed aliquam esse! Labore
+                        laboriosam
+                        <!-- يستمر الوصف الطويل هنا... -->
+                    </p>
+                </article>
+                <article class="unit-description">
+                    <span class="pound-description">
+                        <span class="price-main-description">20</span>
+                        <span> ج.م </span>
+                    </span>
+                    <del class="discount-description">
+                        <span>50</span>
+                        <span class="item-pound"> ج.م </span>
+                    </del>
+                </article>
+                <button class="goBack">رجوع</button>
+            </article>
+        </article>
+
+        <article class="hiddenLayer" id="model-2">
+            <article class="popFrame">
+                <i class="exitMark fa-solid fa-xmark"></i>
+                <a href="">
+                    <i class="fa-solid fa-share"></i>
+                </a>
+                <div class="stickyHeader">
+                    <img src="images/Juice.jpeg" alt="">
+                    <div class="title-name-and-desc">
+                        <h2>عصير برتقال</h2>
+                    </div>
+                </div>
+                <article class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum molestiae quasi dolores
+                        nostrumxercitationem,
+                        voluptatem illo deleniti sit distinctio consequuntur accusantium sed aliquam esse! Labore
+                        laboriosam
+                        <!-- يستمر الوصف الطويل هنا... -->
+                    </p>
+                </article>
+                <article class="unit-description">
+                    <span class="pound-description">
+                        <span class="price-main-description">20</span>
+                        <span> ج.م </span>
+                    </span>
+                </article>
+                <button class="goBack">رجوع</button>
+            </article>
+        </article>
+
+        <article class="hiddenLayer" id="model-3">
+            <article class="popFrame">
+                <i class="exitMark fa-solid fa-xmark"></i>
+                <a href="">
+                    <i class="fa-solid fa-share"></i>
+                </a>
+                <div class="stickyHeader">
+                    <img src="images/Juice.jpeg" alt="">
+                    <div class="title-name-and-desc">
+                        <h2>عصير برتقال</h2>
+                    </div>
+                </div>
+                <article class="content">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum molestiae quasi dolores
+                        nostrumxercitationem, Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis eius
+                        officiis porro saepe itaque vel quidem earum esse rem nihil qui maiores eveniet accusamus in
+                        aspernatur assumenda explicabo eligendi, obcaecati modi nisi ratione! Amet rem iusto, vero
+                        debitis quasi, hic nihil repellat nostrum dicta dignissimos ullam ipsum ipsam placeat facilis
+                        soluta molestias commodi error sapiente blanditiis nam voluptatem voluptas eligendi suscipit
+                        exercitationem. Enim voluptas voluptatibus sit omnis. Et provident inventore deleniti distinctio
+                        ratione accusamus. Modi magni dolores, esse similique, autem rerum nihil labore, officiis
+                        voluptatibus tempora in sunt quas quibusdam? Aut harum ad facere quis distinctio facilis impedit
+                        fuga consequuntur officiis repellat explicabo, asperiores dicta, repudiandae ullam amet animi
+                        nostrum quas aliquam autem nesciunt est. Fugiat, impedit molestiae, recusandae qui eos ut sit
+                        omnis nesciunt sapiente quibusdam quod. Vel minima eum aperiam corporis fuga quas et est
+                        excepturi debitis ea fugiat molestiae numquam delectus beatae blanditiis ipsum fugit facere,
+                        doloremque ipsa sed officia obcaecati. Delectus beatae aperiam dolorem, eius vel eos amet,
+                        similique repellendus obcaecati aliquid recusandae eveniet corrupti enim molestias nostrum,
+                        aliquam aspernatur alias! Modi doloremque inventore possimus eum numquam cupiditate dolore
+                        voluptate deserunt, at beatae reiciendis voluptatem itaque. Suscipit dolorum aperiam voluptates
+                        eveniet! Blanditiis autem earum aliquid, commodi obcaecati quisquam quae explicabo error
+                        inventore cumque qui necessitatibus. Ut beatae rerum ipsam nesciunt neque in doloremque ullam
+                        laboriosam facilis mollitia est corrupti doloribus quis, reiciendis consequatur error
+                        reprehenderit temporibus aut iure, suscipit alias repudiandae fuga? Error reprehenderit aut
+                        maiores delectus quibusdam ipsum placeat sed expedita. Ullam hic quas qui vero nobis, odio, eius
+                        praesentium unde saepe repellat ab beatae laudantium similique pariatur consequuntur excepturi?
+                        Nisi quam debitis blanditiis obcaecati alias saepe harum eum, aliquam quas ex dolor aperiam eius
+                        nobis officia. Neque vel accusamus delectus officia, quibusdam accusantium eveniet nesciunt
+                        eligendi quae nisi vitae expedita, porro nihil. Itaque illum maxime, dolore earum excepturi
+                        temporibus expedita eum recusandae a voluptates natus dignissimos, id rerum molestias! Totam
+                        quos labore eos. Deserunt, maiores odio inventore est laborum tenetur odit recusandae vitae
+                        expedita quam doloremque quo quisquam iure in quibusdam consequatur aliquam earum veniam quidem
+                        molestias reprehenderit soluta! Nostrum, voluptatum inventore in eveniet repellat rerum, quos
+                        tempora quaerat architecto itaque eum possimus fugiat sequi odio quo distinctio non consequatur
+                        culpa deserunt. Quos asperiores ipsam nesciunt id, est veniam dolorum natus nihil, recusandae
+                        eius vero, fugit laborum tempora vitae libero tempore vel commodi. Incidunt aspernatur vel
+                        officia quibusdam quaerat officiis eveniet dicta explicabo ad ducimus molestias consectetur
+                        repellat voluptatem unde qui vitae, distinctio consequatur ex necessitatibus ipsam saepe velit
+                        odio! Distinctio iste commodi consequatur officiis! Dignissimos rem, laudantium, veniam nihil
+                        pariatur vitae nobis hic quo consectetur similique ad beatae, sequi optio dicta itaque dolorem
+                        quod ipsam quaerat quisquam numquam. Sequi qui cum porro molestiae, at, eum alias placeat
+                        sapiente obcaecati voluptatibus laboriosam. Voluptas quo quas nihil, deleniti debitis quia earum
+                        quisquam, dolores consequatur a impedit non quam, accusamus commodi magnam necessitatibus omnis
+                        id iure alias. Velit iste quaerat veritatis illo voluptates minus praesentium saepe nihil ab
+                        blanditiis impedit, accusantium sequi suscipit, porro beatae aliquid nesciunt. Aperiam enim sed
+                        corporis suscipit quasi sapiente omnis earum magnam, quidem sint modi voluptatibus delectus
+                        distinctio. Sint aliquid a magnam rem nihil eveniet, veritatis minus quidem animi eum ullam
+                        sapiente nemo optio, aspernatur voluptatem culpa corrupti repudiandae, voluptas laboriosam.
+                        Aliquam beatae dicta maiores hic deserunt ab, unde eos id animi molestiae reiciendis porro
+                        veritatis accusantium reprehenderit totam culpa mollitia quae eveniet nostrum ea consequuntur ad
+                        laudantium eum! Eligendi reiciendis accusamus reprehenderit harum labore! Fuga illum
+                        reprehenderit atque ut beatae fugiat ipsa error ullam, dolore qui voluptate dignissimos sed
+                        consectetur aut ea dolores debitis quos magni saepe reiciendis! Ut odio quae, nostrum
+                        necessitatibus omnis culpa error maxime sapiente molestiae laborum? Aperiam labore fuga vero,
+                        vitae accusamus temporibus amet voluptatibus similique nostrum recusandae quo quis odio rerum
+                        porro nesciunt, debitis expedita veniam maxime quas provident blanditiis reiciendis saepe magni!
+                        Facere voluptatum molestiae nesciunt nemo, hic quasi officia voluptates fugit, minus laboriosam
+                        nam doloremque, nisi natus possimus unde! Quidem deserunt, quo nisi veniam, quos nihil
+                        temporibus maiores enim assumenda voluptatibus iste quasi nam suscipit ab. Aperiam ea nulla
+                        aliquid aspernatur sequi! Placeat assumenda, vel rerum ad a veniam beatae perferendis hic eos
+                        eaque culpa quos porro sit soluta voluptatibus itaque expedita voluptatum voluptatem? Earum,
+                        labore? Dignissimos dolor aliquid, adipisci voluptatibus qui ducimus nemo veritatis nam placeat
+                        voluptas tempore aspernatur at veniam facere illo rerum recusandae vitae minus ipsa, tenetur
+                        cupiditate aliquam doloremque. Iusto perspiciatis eveniet vitae id, porro iste, quae debitis
+                        odit provident sit numquam nemo nisi! Culpa eum doloribus illum consequatur rem? Delectus,
+                        eveniet. Error eum ducimus excepturi rem voluptatibus nemo eaque, voluptates voluptatem
+                        voluptatum in dolores ipsam inventore dignissimos, tenetur expedita sint consequatur minus
+                        accusamus facilis vel! Ullam voluptate quidem fuga vel sit tenetur dolorem deserunt dignissimos
+                        impedit quasi, quo commodi aliquid enim repudiandae quia nisi incidunt numquam amet dolorum ad
+                        exercitationem quaerat, error odit? Quis amet id, magni, alias quam facilis voluptatibus quasi
+                        eos, maxime quas expedita ab! Commodi facere enim veritatis, deserunt molestias, maiores
+                        deleniti reiciendis earum aperiam asperiores dicta officia ut neque, quia illo necessitatibus?
+                        Fugiat voluptatum officiis molestias aspernatur exercitationem sint earum odit error recusandae
+                        cum, soluta quidem id. Laboriosam magni, optio sit culpa reprehenderit repudiandae magnam,
+                        aliquam quae illo excepturi incidunt ducimus. Aperiam cum excepturi mollitia rerum delectus hic
+                        voluptatum assumenda magnam obcaecati atque! Aut impedit est illum reprehenderit unde nemo
+                        vitae? Qui, vero nesciunt. Eius consequuntur dolorum voluptate unde veritatis ratione error
+                        fugit maxime. Molestiae tenetur recusandae nam aut necessitatibus, corporis eos dignissimos
+                        quaerat eum laborum atque quis sunt cumque temporibus quam accusantium possimus? Quos velit
+                        eligendi odio quia doloribus voluptates inventore necessitatibus dolores nisi. Fugiat nulla
+                        aliquam qui porro delectus. Ad nam voluptatum, aperiam maiores quibusdam quas magnam. Blanditiis
+                        in facere harum cum illo magni itaque quo. Reiciendis provident dolorem libero voluptatum ex sed
+                        excepturi alias veniam earum possimus explicabo, aliquid animi tempora laborum? Itaque iste
+                        dicta doloremque eligendi, illum dolorum sit. Est repellendus vitae commodi atque praesentium
+                        consequuntur inventore, nemo ab et aut iure omnis, libero eius, aspernatur cum! Sequi, suscipit
+                        alias.
+                        voluptatem illo deleniti sit distinctio consequuntur accusantium sed aliquam esse! Labore
+                        laboriosam
+                        <!-- يستمر الوصف الطويل هنا... -->
+                    </p>
+                </article>
+
+                <article class="unit-description-size">
+                    <article class="size-small">
+                        <span>
+                            S
+                        </span>
+                        <span>
+                            25
+                        </span>
+                    </article>
+
+                    <article class="size-medium">
+                        <span>
+                            M
+                        </span>
+                        <span>
+                            50
+                        </span>
+                    </article>
+
+                    <article class="size-large">
+                        <span>
+                            L
+                        </span>
+                        <span>
+                            100
+                        </span>
+                    </article>
+                </article>
+                <button class="goBack">رجوع</button>
+            </article>
+        </article>
+        <!-- ////////// End Discrebtion \\\\\\\\\\ -->
+
+        <!-- ////////// Start Footer \\\\\\\\\\ -->
+        <footer>
+            <span id="openModalButton" class="open-link">
+                للتواصل مع الشركة المطورة
+                <span class="click-here">
+                    اضغط هنا
+                </span>
+            </span>
+
+            <article id="modalOverlay" class="modalOverlay">
+                <article class="modalPopup" id="modalPopup">
+                    <span class="close-btn" id="closeModalButton"><i class="fa-solid fa-xmark"></i></span>
+                    <img class="logo-quick-menu" src="images/logo.png" alt="" srcset="">
+
+                    <h2>
+                        للتواصل معنا
+                    </h2>
+                    <article class="socialmedia-our">
+                        <a href="tel:0123456789"><i class="fa-solid fa-phone"></i></a>
+                        <a href="https://wa.me/01026775729"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/share/15hDkAqaMQ/"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/amr_khalid_youssef?igsh=dnBpdDYzeXh6aGxp"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href=""><img class="gmail" src="images/gmail.svg" alt="" srcset=""></a>
+                    </article>
+                </article>
+            </article>
+        </footer>
+        <!-- ////////// End Footer \\\\\\\\\\ -->
+
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+{
+    "short_name": "Quick Menu",
+    "name": "Quick",
+    "description": "Manifest File Test",
+    "start_url": "/index.html",
+    "dispaly": "standalone",
+    "orientation": "any",
+    "scope": "/",
+    "background_color": "white",
+    "them_color": "black"
+
+}
